@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rakya Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .hero {
+      background: url('startup-3267505_1920.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-title {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: #0d6efd;
+    }
+
+    .service-icon {
+      font-size: 2.5rem;
+      color: #0d6efd;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #1c1f26;
+      color: white;
+      padding: 20px 0;
+    }
+	img, svg {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.py-3 {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1500px;
+    }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: white; position: relative;">
+  <div class="container position-relative">
+    
+    <!-- Logo on the left -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="#" style="color: #003f81;">
+      <img src="logo_rakya.png" alt="Rakya Logo" width="45" height="45">
+    </a>
+
+    <!-- Centered Text -->
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <span class="fw-bold" style="color: #003f81; font-size: 1.5rem;">Rakya</span>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center">
+    <div class="container hero-content">
+      <h1 class="display-4 fw-bold">Empowering Payments & Financial Solutions</h1>
+      <p class="lead mt-3">Simple. Secure. Smart. Trusted by businesses & individuals.</p>
+      <a href="#contact" class="btn btn-light btn-lg mt-4">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Our Services</h2>
+      <div class="row g-4 mt-4">
+        <div class="col-md-4">
+          <div class="card p-4">
+            <i class="bi bi-credit-card service-icon"></i>
+            <h5 class="fw-bold">POS Machine Services</h5>
+            <p>Accept debit/credit card payments with the lowest charges using reliable POS terminals.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <i class="bi bi-currency-exchange service-icon"></i>
+            <h5 class="fw-bold">Money Transfer</h5>
+            <p>Transfer funds safely and instantly across India. Fast and secure domestic money transfers.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <i class="bi bi-phone service-icon"></i>
+            <h5 class="fw-bold">Recharge & Bill Payments</h5>
+            <p>One-stop solution for all mobile, DTH recharges & utility bill payments like electricity, gas & more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5 bg-light" id="contact">
+    <div class="container">
+      <h2 class="section-title text-center">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form class="row g-3 mt-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <div class="col-12 text-center">
+              <button class="btn btn-primary btn-lg">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Rakya Solutions | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
